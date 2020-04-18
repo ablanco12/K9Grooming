@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "../src/components/Nav/Nav";
+// import Nav from "../src/components/Nav/Nav";
 import "./App.css";
 import routes from "./routes";
 import { withRouter } from "react-router-dom";
