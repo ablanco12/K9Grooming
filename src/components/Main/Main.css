@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s linear;
+}
+
+@media (max-width: 750px) {
+  .fade-in {
+    display: none;
+  }
+}
+/* .fade-in {
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.set-size {
+  max-width: 70px;
+}
