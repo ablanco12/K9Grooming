@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form } from "semantic-ui-react";
 
-const FormExampleUnstackableGroup = () => (
+const AddClientInfo = () => (
   <Form>
     <Form.Group unstackable widths={2}>
       <Form.Input label="First name" placeholder="First name" />
@@ -11,9 +11,13 @@ const FormExampleUnstackableGroup = () => (
       <Form.Input label="Address" placeholder="Address" />
       <Form.Input label="Phone" placeholder="Phone" />
     </Form.Group>
+    <Form.Group widths={2}>
+      <Form.Input label="Dog" placeholder="Name" />
+      <Form.Input label="Breed" placeholder="Breed" />
+    </Form.Group>
     {/* <Form.Checkbox label="I agree to the Terms and Conditions" /> */}
     <Button type="submit">Submit</Button>
   </Form>
 );
 
-export default FormExampleUnstackableGroup;
+export default AddClientInfo;
