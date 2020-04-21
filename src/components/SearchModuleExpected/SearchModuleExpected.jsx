@@ -20,7 +20,7 @@ const source = _.times(5, () => ({
   price: faker.finance.amount(0, 100, 2, "$")
 }));
 
-export default class SearchExampleStandard extends Component {
+export default class SearchModuleExpected extends Component {
   state = initialState;
 
   handleResultSelect = (e, { result }) =>
@@ -58,7 +58,7 @@ export default class SearchExampleStandard extends Component {
             results={results}
             value={value}
             {...this.props}
-            placeholder="Search Expected Appointments"
+            placeholder="Search"
           />
           <Grid.Column width={6}></Grid.Column>
 

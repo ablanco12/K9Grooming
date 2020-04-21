@@ -12,7 +12,8 @@ import {
   Icon
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import SearchModule from "../SearchModule/SearchModule";
+// import SearchModule from "../SearchModuleExpected/SearchModuleExpected";
+import SearchTabs from "../SearchTabs/SearchTabs";
 
 class AdminDash extends Component {
   state = {};
@@ -120,7 +121,7 @@ class AdminDash extends Component {
           </Grid.Column>
         </Grid>
         <Divider section />
-        <SearchModule />
+        <SearchTabs />
       </div>
     );
   }
