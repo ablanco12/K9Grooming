@@ -4,6 +4,7 @@ import Main from "../src/components/Main/Main";
 import Login from "../src/components/Login/Login";
 import AdminDash from "../src/components/AdminDash/AdminDash";
 import AddClientInfo from "../src/components/AddClientInfo/AddClientInfo";
+import Calendar from "../src/components/Calendar/Calendar";
 
 export default (
   <Switch>
@@ -11,7 +12,7 @@ export default (
     <Route exact path="/dashboard" component={AdminDash} />
     <Route path="/login" component={Login} />
     <Route path="/add_client" component={AddClientInfo} />
-
+    <Route path="/calendar" component={Calendar} />
     {/* <Route path="/dashboard/admin" component={AdminDash} /> */}
   </Switch>
 );

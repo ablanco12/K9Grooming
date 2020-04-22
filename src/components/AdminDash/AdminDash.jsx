@@ -12,7 +12,7 @@ import {
   Icon
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-// import SearchModule from "../SearchModuleExpected/SearchModuleExpected";
+import Calendar from "../Calendar/Calendar";
 import SearchTabs from "../SearchTabs/SearchTabs";
 
 class AdminDash extends Component {
@@ -82,7 +82,9 @@ class AdminDash extends Component {
               <Button>New Customer Form</Button>
             </Link>
             <br />
-            <Button>Calendar</Button>
+            <Link to="/calendar">
+              <Button>Calendar</Button>
+            </Link>
           </Grid.Column>
           <Grid.Column>
             <div>
