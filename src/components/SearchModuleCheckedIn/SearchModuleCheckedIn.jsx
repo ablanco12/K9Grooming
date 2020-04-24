@@ -10,6 +10,7 @@ import {
   Button,
   Icon
 } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const initialState = { isLoading: false, results: [], value: "" };
 
@@ -83,6 +84,11 @@ export default class SearchModuleCheckedIn extends Component {
                       <Button icon>
                         <Icon name="check" title="Check in" />
                       </Button>
+                      <Link to="/client_info">
+                        <Button icon>
+                          <Icon name="address card" title="More Info" />
+                        </Button>
+                      </Link>
                     </Table.Cell>
                     <Table.Cell>Coco (Chihuahua)</Table.Cell>
                     <Table.Cell>Jasmine Blanco</Table.Cell>
@@ -94,6 +100,11 @@ export default class SearchModuleCheckedIn extends Component {
                       <Button icon>
                         <Icon name="check" title="Check in" />
                       </Button>
+                      <Link to="/client_info">
+                        <Button icon>
+                          <Icon name="address card" title="More Info" />
+                        </Button>
+                      </Link>
                     </Table.Cell>
                     <Table.Cell>Biscuit (Chihuahua)</Table.Cell>
                     <Table.Cell>Elena Blanco</Table.Cell>

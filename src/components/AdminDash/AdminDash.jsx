@@ -96,10 +96,6 @@ class AdminDash extends Component {
                 <Statistic.Label>OUT</Statistic.Label>
                 <Statistic.Value>19</Statistic.Value>
               </Statistic>
-              <Statistic size="small">
-                <Statistic.Label>O/N</Statistic.Label>
-                <Statistic.Value>6</Statistic.Value>
-              </Statistic>
             </div>
           </Grid.Column>
           <Grid.Column>

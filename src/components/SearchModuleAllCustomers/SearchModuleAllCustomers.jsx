@@ -21,7 +21,7 @@ const source = _.times(5, () => ({
   price: faker.finance.amount(0, 100, 2, "$")
 }));
 
-export default class SearchModuleExpected extends Component {
+export default class SearchModuleAllCustomers extends Component {
   state = initialState;
 
   handleResultSelect = (e, { result }) =>
@@ -117,6 +117,11 @@ export default class SearchModuleExpected extends Component {
                       <Button icon>
                         <Icon name="check" title="Check in" />
                       </Button>
+                      <Link to="/client_info">
+                        <Button icon>
+                          <Icon name="address card" title="More Info" />
+                        </Button>
+                      </Link>
                     </Table.Cell>
                     <Table.Cell>Dog (Daisy)</Table.Cell>
                     <Table.Cell>John Laiki</Table.Cell>

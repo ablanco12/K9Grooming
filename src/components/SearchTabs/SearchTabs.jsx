@@ -2,6 +2,7 @@ import React from "react";
 import { Tab } from "semantic-ui-react";
 import SearchModuleExpected from "../SearchModuleExpected/SearchModuleExpected";
 import SearchModuleCheckedIn from "../SearchModuleCheckedIn/SearchModuleCheckedIn";
+import SearchModuleAllCustomers from "../SearchModuleAllCustomers/SearchModuleAllCustomers";
 
 const panes = [
   {
@@ -17,6 +18,14 @@ const panes = [
     render: () => (
       <Tab.Pane attached={false}>
         <SearchModuleCheckedIn />
+      </Tab.Pane>
+    )
+  },
+  {
+    menuItem: "All Customers",
+    render: () => (
+      <Tab.Pane attached={false}>
+        <SearchModuleAllCustomers />
       </Tab.Pane>
     )
   }
